@@ -1,6 +1,15 @@
 # Head Element
 
-Section: 01-HTML
+HTML `<head>` element ka complete demo.
 
-## Goal
-Is topic ko samajhna aur hands-on practice karna.
+## Files
+- `index.html` — Full head with all tags
+- `minimal.html` — Sirf zaroori 3 tags
+- `notes.md` — Complete notes
+
+## Key Learnings
+- Charset pehla
+- Viewport mobile ke liye
+- Title SEO ke liye
+- Open Graph social ke liye
+- Order matters
