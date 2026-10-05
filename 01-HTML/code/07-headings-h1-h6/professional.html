@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Heading Structure — Blog Post Example | Abu Bakar</title>
+  <meta name="description" content="Real-world example of proper heading hierarchy in a blog post.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Georgia, serif;
+      line-height: 1.7;
+      color: #2c3e50;
+      background: #f8f9fa;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: white;
+      padding: 50px 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+
+    /* Article header */
+    .article-meta {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .article-meta span {
+      margin-right: 15px;
+    }
+
+    /* H1 — Article title */
+    h1 {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    /* H2 — Sections */
+    h2 {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 1.75rem;
+      color: #1a1a1a;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ecf0f1;
+      font-weight: 600;
+    }
+
+    /* H3 — Subsections */
+    h3 {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 1.35rem;
+      color: #2c3e50;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* H4 — Sub-subsections */
+    h4 {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 1.1rem;
+      color: #34495e;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #4a4a4a;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: #c0392b;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 20px 0;
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+
+    pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+
+    blockquote {
+      border-left: 4px solid #3498db;
+      padding: 15px 20px;
+      margin: 20px 0;
+      background: #f8f9fa;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .toc {
+      background: #f8f9fa;
+      padding: 20px 25px;
+      border-radius: 8px;
+      margin: 30px 0;
+      border-left: 4px solid #3498db;
+    }
+
+    .toc h2 {
+      font-size: 1.2rem;
+      margin: 0 0 15px;
+      border: none;
+      padding: 0;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .toc li {
+      margin: 8px 0;
+    }
+
+    .toc a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 30px 20px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+  <article class="container">
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- PROFESSIONAL HEADING HIERARCHY                  -->
+    <!-- Blog post ka real-world example                -->
+    <!-- ═══════════════════════════════════════════════ -->
+
+    <!-- Article metadata -->
+    <div class="article-meta">
+      <span>📅 October 5, 2026</span>
+      <span>⏱️ 8 min read</span>
+      <span>✍️ Abu Bakar</span>
+    </div>
+
+    <!-- H1 — Article Title (sirf ek) -->
+    <h1>Complete Guide to HTML Headings: SEO, Accessibility & Best Practices</h1>
+
+    <p>Headings HTML document ka backbone hain. Yeh sirf text ko bada karne ke liye nahi hain — yeh document ki <strong>structure</strong>, <strong>SEO</strong>, aur <strong>accessibility</strong> ke liye critical hain.</p>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#what-are">What Are HTML Headings?</a></li>
+        <li><a href="#hierarchy">Heading Hierarchy</a></li>
+        <li><a href="#seo">SEO Best Practices</a></li>
+        <li><a href="#a11y">Accessibility Guidelines</a></li>
+        <li><a href="#common-mistakes">Common Mistakes</a></li>
+      </ul>
+    </div>
+
+    <!-- H2 — Major Section -->
+    <h2 id="what-are">What Are HTML Headings?</h2>
+    
+    <p>HTML mein 6 heading levels hain: <code>&lt;h1&gt;</code> se <code>&lt;h6&gt;</code> tak. Har level document ki hierarchy mein ek role play karta hai.</p>
+
+    <!-- H3 — Subsection -->
+    <h3>Heading Levels</h3>
+    <p>H1 sab se important hai (page title), H6 sab se kam. Hierarchy logical honi chahiye.</p>
+
+    <!-- H3 — Another Subsection -->
+    <h3>Visual vs Semantic</h3>
+    <p>Heading ka size CSS se control hota hai, lekin semantic meaning tag se aata hai. Size ke liye heading change mat karo.</p>
+
+    <!-- H2 — Next Major Section -->
+    <h2 id="hierarchy">Heading Hierarchy</h2>
+
+    <p>Proper hierarchy document ko scannable aur accessible banati hai.</p>
+
+    <h3>Correct Pattern</h3>
+    <pre><code>&lt;h1&gt;Page Title&lt;/h1&gt;
+  &lt;h2&gt;Section&lt;/h2&gt;
+    &lt;h3&gt;Subsection&lt;/h3&gt;
+      &lt;h4&gt;Sub-subsection&lt;/h4&gt;</code></pre>
+
+    <h3>Why It Matters</h3>
+    
+    <!-- H4 — Sub-subsection -->
+    <h4>For SEO</h4>
+    <p>Google headings ko page structure samajhne ke liye use karta hai.</p>
+
+    <!-- H4 — Another Sub-subsection -->
+    <h4>For Accessibility</h4>
+    <p>Screen readers headings se navigate karte hain (H key).</p>
+
+    <!-- H2 — Next Major Section -->
+    <h2 id="seo">SEO Best Practices</h2>
+
+    <p>Headings SEO ka important on-page factor hain.</p>
+
+    <h3>Rules</h3>
+    <blockquote>
+      <strong>Rule 1:</strong> Ek H1 per page.<br>
+      <strong>Rule 2:</strong> Logical hierarchy (skip mat karo).<br>
+      <strong>Rule 3:</strong> Descriptive text (generic nahi).<br>
+      <strong>Rule 4:</strong> Keywords naturally use karo.
+    </blockquote>
+
+    <h3>Examples</h3>
+    
+    <h4>❌ Bad</h4>
+    <pre><code>&lt;h1&gt;Home&lt;/h1&gt;
+&lt;h1&gt;Welcome&lt;/h1&gt;  &lt;!-- Multiple H1 --&gt;
+&lt;h4&gt;About&lt;/h4&gt;    &lt;!-- Level skip --&gt;</code></pre>
+
+    <h4>✅ Good</h4>
+    <pre><code>&lt;h1&gt;Abu Bakar — Full Stack Web Engineer&lt;/h1&gt;
+&lt;h2&gt;About Me&lt;/h2&gt;
+&lt;h3&gt;Skills&lt;/h3&gt;</code></pre>
+
+    <!-- H2 — Next Major Section -->
+    <h2 id="a11y">Accessibility Guidelines</h2>
+
+    <p>Screen reader users headings se document navigate karte hain.</p>
+
+    <h3>Shortcuts</h3>
+    <ul>
+      <li><strong>NVDA:</strong> H key = next heading</li>
+      <li><strong>JAWS:</strong> Insert + F6 = heading list</li>
+      <li><strong>VoiceOver:</strong> Rotor = heading navigation</li>
+    </ul>
+
+    <h3>Requirements</h3>
+    <ul>
+      <li>Har section ko heading do</li>
+      <li>Logical order maintain karo</li>
+      <li>Empty headings mat use karo</li>
+      <li>Descriptive text</li>
+    </ul>
+
+    <!-- H2 — Final Section -->
+    <h2 id="common-mistakes">Common Mistakes</h2>
+
+    <h3>Multiple H1 Tags</h3>
+    <p>Sirf ek H1 per page hona chahiye — page ka main topic.</p>
+
+    <h3>Skipping Levels</h3>
+    <p>H1 se H4 par jump mat karo. H2, H3 beech mein rakho.</p>
+
+    <h3>Styling with Headings</h3>
+    <p>Bada text dikhane ke liye headings mat use karo. CSS se size control karo.</p>
+
+    <!-- Conclusion with H2 -->
+    <h2>Conclusion</h2>
+    <p>Headings sirf decoration nahi — document ka structure hain. SEO, accessibility, aur user experience — teenon ke liye critical.</p>
+    <p>Proper hierarchy follow karo, ek H1 rakho, aur descriptive text use karo.</p>
+  </article>
+</body>
+</html>
