@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Structure — Production Example | Abu Bakar</title>
+  <meta name="description" content="Professional body structure with semantic HTML, accessibility, and best practices.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Skip link (accessibility) */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      z-index: 9999;
+      border-radius: 0 0 5px 0;
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Header */
+    header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #4a4a4a;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+
+    /* Main */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      padding: 60px 40px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    article {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+
+    article h2 {
+      color: #1a1a1a;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    article p {
+      margin-bottom: 15px;
+      color: #4a4a4a;
+    }
+
+    aside {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      height: fit-content;
+    }
+
+    aside h3 {
+      color: #1a1a1a;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    aside li:last-child {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    footer {
+      background: #1a1a1a;
+      color: #e5e5e5;
+      padding: 40px 30px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    footer h4 {
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 6px 0;
+    }
+
+    footer a {
+      color: #a0a0a0;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- PROFESSIONAL BODY STRUCTURE                              -->
+  <!-- Skip link → Header → Main → Footer → Scripts            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Skip link (first focusable element) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header with navigation -->
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">Abu Bakar</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <section class="hero">
+      <h1>Professional Body Structure</h1>
+      <p>Yeh production-ready body structure hai — semantic HTML, accessibility, aur best practices ke saath.</p>
+    </section>
+
+    <div class="content-grid">
+      <!-- Article (main content) -->
+      <article>
+        <h2>Body Structure Ka Best Practice</h2>
+        <p>Ek professional HTML body mein yeh elements is order mein hote hain:</p>
+        <ol style="padding-left: 25px; margin: 15px 0;">
+          <li><strong>Skip link</strong> — Pehla focusable element (accessibility)</li>
+          <li><strong>&lt;header&gt;</strong> — Logo, navigation, branding</li>
+          <li><strong>&lt;main&gt;</strong> — Primary content (sirf ek per page)</li>
+          <li><strong>&lt;footer&gt;</strong> — Copyright, links, secondary info</li>
+          <li><strong>&lt;script&gt;</strong> — JavaScript (end mein)</li>
+        </ol>
+        <p>Yeh structure SEO, accessibility, aur maintainability ke liye best hai.</p>
+      </article>
+
+      <!-- Aside (sidebar) -->
+      <aside>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#docs">Documentation</a></li>
+          <li><a href="#api">API Reference</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="#changelog">Changelog</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Abu Bakar. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts at end (non-blocking) -->
+  <script>
+    console.log('=== Professional Body Structure ===');
+    console.log('Body element:', document.body);
+    console.log('Main element:', document.querySelector('main'));
+    console.log('All landmarks:', document.querySelectorAll('header, nav, main, aside, footer').length);
+  </script>
+</body>
+</html>
