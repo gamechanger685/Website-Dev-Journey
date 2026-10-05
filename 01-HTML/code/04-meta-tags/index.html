@@ -1,11 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- META TAGS COMPLETE DEMO — 25+ Types                     -->
+  <!-- Order matters: charset pehla, phir baaki               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- ─── 1. CHARSET (MUST BE FIRST) ─── -->
   <meta charset="UTF-8">
+
+  <!-- ─── 2. VIEWPORT ─── -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meta Tags</title>
+
+  <!-- ─── 3. TITLE ─── -->
+  <title>Meta Tags Complete Guide | Abu Bakar</title>
+
+  <!-- ─── 4. SEO BASICS ─── -->
+  <meta name="description" content="Complete guide to HTML meta tags: SEO, Open Graph, Twitter Cards, security, and all types with real examples.">
+  <meta name="keywords" content="HTML, meta tags, SEO, Open Graph, Twitter Cards">
+  <meta name="author" content="Abu Bakar">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+  <meta name="copyright" content="© 2026 Abu Bakar">
+
+  <!-- ─── 5. CANONICAL & ALTERNATE ─── -->
+  <link rel="canonical" href="https://example.com/meta-tags">
+  <link rel="alternate" hreflang="en" href="https://example.com/en/meta-tags">
+  <link rel="alternate" hreflang="ur" href="https://example.com/ur/meta-tags">
+  <link rel="alternate" hreflang="x-default" href="https://example.com/meta-tags">
+
+  <!-- ─── 6. OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ─── -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Meta Tags Complete Guide">
+  <meta property="og:description" content="Learn all HTML meta tags with real examples.">
+  <meta property="og:url" content="https://example.com/meta-tags">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Meta Tags Guide Cover">
+  <meta property="og:site_name" content="Abu Bakar Portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ur_PK">
+
+  <!-- Article-specific OG -->
+  <meta property="article:author" content="Abu Bakar">
+  <meta property="article:published_time" content="2026-10-05T10:00:00Z">
+  <meta property="article:modified_time" content="2026-10-05T12:00:00Z">
+  <meta property="article:section" content="Web Development">
+  <meta property="article:tag" content="HTML">
+  <meta property="article:tag" content="Meta Tags">
+
+  <!-- ─── 7. TWITTER CARDS ─── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@abubakar">
+  <meta name="twitter:creator" content="@abubakar">
+  <meta name="twitter:title" content="Meta Tags Complete Guide">
+  <meta name="twitter:description" content="Learn all HTML meta tags with examples.">
+  <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+  <meta name="twitter:image:alt" content="Meta Tags Guide">
+  <meta name="twitter:label1" content="Reading time">
+  <meta name="twitter:data1" content="8 minutes">
+
+  <!-- ─── 8. THEME & BRANDING ─── -->
+  <meta name="theme-color" content="#3498db" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+  <meta name="msapplication-TileColor" content="#3498db">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+
+  <!-- ─── 9. PWA / MOBILE APP ─── -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Abu Bakar">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Meta Guide">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- ─── 10. SECURITY (Server headers better hain) ─── -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+  <!-- ─── 11. FAVICON ─── -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+  <link rel="apple-touch-icon" href="/apple-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- ─── 12. PERFORMANCE HINTS ─── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//cdn.example.com">
+
+  <!-- ─── 13. INTERNAL CSS ─── -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin: 30px 0 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #ecf0f1;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      color: #34495e;
+      margin: 20px 0 10px;
+      font-size: 1.15rem;
+    }
+
+    p { margin: 10px 0; }
+
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: #c0392b;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin: 10px 0;
+      font-size: 0.85em;
+      line-height: 1.4;
+    }
+
+    pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+      font-size: 1em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 0.9em;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #3498db;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) { background: #f9f9f9; }
+
+    .info-box {
+      background: #e8f4f8;
+      border-left: 4px solid #3498db;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #f39c12;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .danger-box {
+      background: #f8d7da;
+      border-left: 4px solid #e74c3c;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .success-box {
+      background: #d4edda;
+      border-left: 4px solid #27ae60;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    ul, ol { padding-left: 25px; margin: 10px 0; }
+    li { margin: 5px 0; }
+
+    .btn {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      margin: 5px 5px 5px 0;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: #2980b9; }
+    .btn-danger { background: #e74c3c; }
+    .btn-danger:hover { background: #c0392b; }
+    .btn-success { background: #27ae60; }
+    .btn-success:hover { background: #229954; }
+
+    .output {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 15px;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+      margin: 10px 0;
+      white-space: pre-wrap;
+      max-height: 400px;
+      overflow-y: auto;
+      font-size: 0.85em;
+      line-height: 1.5;
+    }
+
+    .demo-section {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border: 1px solid #e0e0e0;
+    }
+
+    .tag-count {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin-left: 8px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Meta Tags practice -->
+  <div class="container">
+    <h1>📘 Meta Tags — Complete Guide</h1>
+
+    <div class="info-box">
+      <strong>Meta tags</strong> = Metadata jo browser, search engines, aur social media ko page ke baare mein batati hai. User ko screen par nazar nahi aati lekin <em>peeche kaam</em> karti hai — SEO, social sharing, performance, security.
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>1. Charset — Character Encoding</h2>
+    <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+    <ul>
+      <li><strong>Zaroori:</strong> Haan — hamesha lagao</li>
+      <li><strong>Position:</strong> Head ka <strong>pehla tag</strong></li>
+      <li><strong>Kyun:</strong> Urdu, Arabic, Chinese sab characters sahi dikhein</li>
+      <li><strong>Value:</strong> Hamesha <code>UTF-8</code></li>
+    </ul>
+    <div class="success-box">
+      <strong>Current Page Charset:</strong> <code id="charset-display">...</code>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>2. Viewport — Mobile Responsive</h2>
+    <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+    <table>
+      <tr><th>Value</th><th>Matlab</th></tr>
+      <tr><td><code>width=device-width</code></td><td>Screen ki actual width</td></tr>
+      <tr><td><code>initial-scale=1.0</code></td><td>100% zoom</td></tr>
+      <tr><td><code>maximum-scale=1.0</code></td><td>Max zoom — accessibility issue</td></tr>
+      <tr><td><code>user-scalable=no</code></td><td>Zoom band — ❌ mat karo</td></tr>
+      <tr><td><code>viewport-fit=cover</code></td><td>iPhone notch handle</td></tr>
+    </table>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>3. SEO Meta Tags</h2>
+
+    <h3>Description</h3>
+    <pre><code>&lt;meta name="description" content="..."&gt;</code></pre>
+    <p>Google search mein <strong>neeche wala text</strong>. 150-160 characters.</p>
+
+    <h3>Keywords (Purana)</h3>
+    <pre><code>&lt;meta name="keywords" content="HTML, CSS, JS"&gt;</code></pre>
+    <div class="warning-box">
+      Aaj kal Google keywords ko <strong>ignore</strong> karta hai. SEO fayda nahi. Sirf historical reference ke liye.
+    </div>
+
+    <h3>Robots</h3>
+    <pre><code>&lt;meta name="robots" content="index, follow"&gt;</code></pre>
+    <table>
+      <tr><th>Value</th><th>Matlab</th></tr>
+      <tr><td><code>index</code></td><td>Search mein dikhao</td></tr>
+      <tr><td><code>noindex</code></td><td>Search mein mat dikhao</td></tr>
+      <tr><td><code>follow</code></td><td>Links follow karo</td></tr>
+      <tr><td><code>nofollow</code></td><td>Links follow mat karo</td></tr>
+      <tr><td><code>noarchive</code></td><td>Cache mat karo</td></tr>
+      <tr><td><code>nosnippet</code></td><td>Search mein snippet mat dikhao</td></tr>
+      <tr><td><code>max-snippet:-1</code></td><td>Unlimited snippet length</td></tr>
+    </table>
+
+    <h3>Author, Language, Copyright</h3>
+    <pre><code>&lt;meta name="author" content="Abu Bakar"&gt;
+&lt;meta name="language" content="English"&gt;
+&lt;meta name="copyright" content="© 2026 Abu Bakar"&gt;
+&lt;meta name="revisit-after" content="7 days"&gt;</code></pre>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>4. Open Graph (Facebook, LinkedIn, WhatsApp)</h2>
+    <pre><code>&lt;meta property="og:type" content="article"&gt;
+&lt;meta property="og:title" content="Page Title"&gt;
+&lt;meta property="og:description" content="Description"&gt;
+&lt;meta property="og:image" content="https://example.com/image.jpg"&gt;
+&lt;meta property="og:url" content="https://example.com"&gt;
+&lt;meta property="og:site_name" content="Abu Bakar"&gt;
+&lt;meta property="og:locale" content="en_US"&gt;</code></pre>
+
+    <table>
+      <tr><th>Property</th><th>Kaam</th></tr>
+      <tr><td><code>og:type</code></td><td>website, article, video, product, profile</td></tr>
+      <tr><td><code>og:title</code></td><td>Share karne par title</td></tr>
+      <tr><td><code>og:description</code></td><td>Share description</td></tr>
+      <tr><td><code>og:image</code></td><td>Preview image (1200×630)</td></tr>
+      <tr><td><code>og:image:width</code></td><td>1200</td></tr>
+      <tr><td><code>og:image:height</code></td><td>630</td></tr>
+      <tr><td><code>og:url</code></td><td>Canonical URL</td></tr>
+      <tr><td><code>og:locale</code></td><td>en_US, ur_PK</td></tr>
+      <tr><td><code>og:site_name</code></td><td>Brand name</td></tr>
+    </table>
+
+    <div class="info-box">
+      <strong>Article-specific:</strong> <code>article:author</code>, <code>article:published_time</code>, <code>article:section</code>, <code>article:tag</code>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>5. Twitter Cards</h2>
+    <pre><code>&lt;meta name="twitter:card" content="summary_large_image"&gt;
+&lt;meta name="twitter:site" content="@username"&gt;
+&lt;meta name="twitter:creator" content="@username"&gt;
+&lt;meta name="twitter:title" content="Title"&gt;
+&lt;meta name="twitter:description" content="Desc"&gt;
+&lt;meta name="twitter:image" content="https://example.com/img.jpg"&gt;</code></pre>
+
+    <table>
+      <tr><th>Card Type</th><th>Kab Use</th></tr>
+      <tr><td><code>summary</code></td><td>Chhota square image</td></tr>
+      <tr><td><code>summary_large_image</code></td><td>Badi wide image — recommended</td></tr>
+      <tr><td><code>app</code></td><td>Mobile app</td></tr>
+      <tr><td><code>player</code></td><td>Video/audio</td></tr>
+    </table>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>6. Theme Color & PWA</h2>
+    <pre><code>&lt;meta name="theme-color" content="#3498db"&gt;
+&lt;meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)"&gt;
+&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+&lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+&lt;meta name="apple-mobile-web-app-title" content="Abu Bakar"&gt;</code></pre>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>7. Security Meta Tags</h2>
+    <pre><code>&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"&gt;
+&lt;meta http-equiv="X-Frame-Options" content="DENY"&gt;
+&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self'"&gt;
+&lt;meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin"&gt;</code></pre>
+
+    <div class="warning-box">
+      <strong>Yeh tags server headers se behtar hain.</strong> Sirf meta par depend mat karo — <code>nginx</code> ya <code>Express</code> mein proper headers set karo.
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>8. http-equiv (Purana Tareeqa)</h2>
+    <p><code>http-equiv</code> HTTP headers ko simulate karta hai. 90% cases mein server-side headers better hain.</p>
+
+    <pre><code>&lt;!-- Refresh (avoid) --&gt;
+&lt;meta http-equiv="refresh" content="5;url=https://example.com"&gt;
+
+&lt;!-- Charset (purana, HTML5 se pehle) --&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;</code></pre>
+
+    <div class="danger-box">
+      <strong>Refresh kabhi mat use karo.</strong> UX bura, accessibility fail. Redirect ke liye server-side ya JavaScript use karo.
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>9. Live Demo — DevTools Se Check Karo</h2>
+
+    <div class="demo-section">
+      <p><strong>Buttons dabao aur different meta tags ka output dekho:</strong></p>
+      <button class="btn" onclick="showAllMeta()">Saare Meta Tags <span class="tag-count" id="total-count">0</span></button>
+      <button class="btn" onclick="showOG()">Open Graph</button>
+      <button class="btn" onclick="showTwitter()">Twitter Cards</button>
+      <button class="btn btn-success" onclick="showSEO()">SEO Meta</button>
+      <button class="btn btn-danger" onclick="clearOutput()">Clear</button>
+
+      <div class="output" id="output">Click karo button par...</div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>10. DevTools Commands</h2>
+    <p>Console (F12) kholo aur yeh commands chalao:</p>
+    <pre><code>// Saare meta tags
+document.querySelectorAll('meta');
+
+// Specific meta
+document.querySelector('meta[name="description"]').content;
+
+// Open Graph
+document.querySelector('meta[property="og:title"]').content;
+
+// Charset
+document.characterSet;
+
+// Title
+document.title;
+
+// Meta count
+document.querySelectorAll('meta').length;</code></pre>
+  </div>
+
+  <script>
+    function showAllMeta() {
+      const metas = document.querySelectorAll('meta');
+      let output = `Total meta tags: ${metas.length}\n`;
+      output += `════════════════════════════════════\n\n`;
+      metas.forEach((m, i) => {
+        const name = m.getAttribute('name') 
+                  || m.getAttribute('property') 
+                  || m.getAttribute('http-equiv') 
+                  || m.getAttribute('charset') 
+                  || '(unknown)';
+        const content = m.content || m.charset || '';
+        output += `${i + 1}. [${name}]\n   ${content}\n\n`;
+      });
+      document.getElementById('output').textContent = output;
+    }
+
+    function showOG() {
+      const ogTags = document.querySelectorAll('meta[property^="og:"], meta[property^="article:"]');
+      let output = `Open Graph Tags (${ogTags.length}):\n`;
+      output += `════════════════════════════════════\n\n`;
+      ogTags.forEach(t => {
+        output += `${t.getAttribute('property')}:\n${t.content}\n\n`;
+      });
+      document.getElementById('output').textContent = output;
+    }
+
+    function showTwitter() {
+      const tw = document.querySelectorAll('meta[name^="twitter:"]');
+      let output = `Twitter Cards (${tw.length}):\n`;
+      output += `════════════════════════════════════\n\n`;
+      tw.forEach(t => {
+        output += `${t.getAttribute('name')}:\n${t.content}\n\n`;
+      });
+      document.getElementById('output').textContent = output;
+    }
+
+    function showSEO() {
+      const seo = document.querySelectorAll('meta[name="description"], meta[name="keywords"], meta[name="robots"], meta[name="author"], meta[name="language"]');
+      let output = `SEO Meta Tags (${seo.length}):\n`;
+      output += `════════════════════════════════════\n\n`;
+      seo.forEach(t => {
+        output += `${t.getAttribute('name')}:\n${t.content}\n\n`;
+      });
+      document.getElementById('output').textContent = output;
+    }
+
+    function clearOutput() {
+      document.getElementById('output').textContent = 'Cleared. Click karo dobara.';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('charset-display').textContent = document.characterSet;
+      const total = document.querySelectorAll('meta').length;
+      document.getElementById('total-count').textContent = total;
+      
+      console.log('=== Meta Tags Demo ===');
+      console.log('Total meta tags:', total);
+      console.log('Charset:', document.characterSet);
+      console.log('Title:', document.title);
+      console.log('Description:', document.querySelector('meta[name="description"]').content);
+    });
+  </script>
 </body>
 </html>
