@@ -1,7 +1,7 @@
 <!DOCTYPE html> — Complete Postmortem
 
 1. Why Does It Exist? (Tareekh)
-1990s mein HTML standard nahi tha. Netscape aur Internet Explorer apni marzi se tags bana rahe the. Jis website ko jo browser support karta, woh chalti thi.
+1990s mein HTML standard nahi tha. Netscape(Purana Browser) aur Internet Explorer apni marzi se tags bana rahe the. Jis website ko jo browser support karta, woh chalti thi.
 
 Problem: Web developers ke liye nightmare. Same code Firefox mein kuch, IE mein kuch aur dikhta.
 

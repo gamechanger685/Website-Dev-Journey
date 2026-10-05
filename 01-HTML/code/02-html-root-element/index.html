@@ -3,9 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Html Root Element</title>
+  <title>HTML Root Element Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .box {
+      background: #f0f8ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 4px solid #3498db;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
-  <!-- Html Root Element practice -->
+  <h1>HTML Root Element — Demo</h1>
+
+  <div class="box">
+    <h2>Document Language</h2>
+    <p>Current language: <code id="lang"></code></p>
+    <p>Current direction: <code id="dir"></code></p>
+  </div>
+
+  <div class="box">
+    <h2>Language Examples</h2>
+    <p lang="en">This is English text.</p>
+    <p lang="ur" dir="rtl">یہ اردو متن ہے۔</p>
+    <p lang="ar" dir="rtl">هذا نص عربي.</p>
+    <p lang="fr">Ceci est un texte français.</p>
+  </div>
+
+  <div class="box">
+    <h2>CSS :lang() Selector</h2>
+    <p class="lang-demo" lang="ur">اردو کا رنگ مختلف ہوگا۔</p>
+    <p class="lang-demo" lang="en">English has different color.</p>
+  </div>
+
+  <script>
+    const htmlEl = document.documentElement;
+    document.getElementById("lang").textContent = htmlEl.lang || "(not set)";
+    document.getElementById("dir").textContent = htmlEl.dir || "ltr (default)";
+    
+    console.log("Document element:", htmlEl);
+    console.log("Language:", htmlEl.lang);
+    console.log("Direction:", htmlEl.dir || "ltr (default)");
+  </script>
+
+  <style>
+    p[lang="ur"] {
+      color: #c0392b;
+      font-size: 1.3rem;
+    }
+    p[lang="fr"] {
+      color: #27ae60;
+      font-style: italic;
+    }
+  </style>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOCTYPE Demo</title>
   <style>
+    body { text-align: center; }
     .box {
       width: 200px;
       padding: 20px;
@@ -24,6 +25,10 @@
   <h2>content-box (default)</h2>
   <div class="box">
     Width = 200px + 40 padding + 10 border = 250px total
+  </div>
+
+  <div style="width: 200px; padding: 20px; border: 5px solid;">
+  Width = 200px (padding aur border ANDAR aate hain — IE 5.5 style)
   </div>
   
   <h2>border-box</h2>
