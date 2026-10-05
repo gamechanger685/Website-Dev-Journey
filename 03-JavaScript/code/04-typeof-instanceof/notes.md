@@ -1,0 +1,3 @@
+# Typeof Instanceof — Notes
+
+- 

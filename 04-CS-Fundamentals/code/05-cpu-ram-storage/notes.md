@@ -1,0 +1,3 @@
+# Cpu Ram Storage — Notes
+
+- 

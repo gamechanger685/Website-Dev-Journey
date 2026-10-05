@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Tag</title>
+</head>
+<body>
+  <!-- A Tag practice -->
+  
+  <!-- 1. External URL -->
+<a href="https://google.com">Google</a>
+
+<!-- 2. Relative path -->
+<a href="/about">About</a>
+<a href="../contact">Contact</a>
+
+<!-- 3. Anchor (same page) -->
+<a href="#section-1">Jump to Section 1</a>
+
+<!-- 4. Email -->
+<a href="mailto:abc@example.com?subject=Hello&body=Hi">Email</a>
+
+<!-- 5. Phone -->
+<a href="tel:+923001234567">Call</a>
+
+<!-- 6. SMS -->
+<a href="sms:+923001234567?body=Hi">SMS</a>
+
+<!-- 7. Download -->
+<a href="file.pdf" download="myfile.pdf">Download PDF</a>
+
+<!-- 8. WhatsApp -->
+<a href="https://wa.me/923001234567?text=Hi">WhatsApp</a>
+
+
+
+<!-- Moderan Usage -->
+ 
+<!-- Skip link -->
+<a href="#main" class="skip-link">Skip to main</a>
+
+<!-- SPA navigation (React Router) -->
+<Link to="/about">About</Link>
+
+<!-- Next.js Link -->
+<Link href="/about" prefetch>About</Link>
+
+<!-- External with security -->
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">Example</a>
+
+<!-- Download with size hint -->
+<a href="/file.pdf" download="report.pdf" type="application/pdf">Download (2MB)</a>
+
+</body>
+</html>

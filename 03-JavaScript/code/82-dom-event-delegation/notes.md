@@ -1,0 +1,3 @@
+# Dom Event Delegation — Notes
+
+- 

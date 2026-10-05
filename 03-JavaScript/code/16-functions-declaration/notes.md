@@ -1,0 +1,3 @@
+# Functions Declaration — Notes
+
+- 

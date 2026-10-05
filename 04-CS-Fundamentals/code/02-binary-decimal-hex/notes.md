@@ -1,0 +1,3 @@
+# Binary Decimal Hex — Notes
+
+- 

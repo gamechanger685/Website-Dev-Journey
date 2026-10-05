@@ -1,0 +1,3 @@
+# Arrays Find Findindex — Notes
+
+- 

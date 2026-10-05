@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCTYPE Demo</title>
+  <style>
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #3498db;
+      background: #ecf0f1;
+      margin: 20px 0;
+      box-sizing: content-box; /* Default */
+    }
+    .box-border {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1>DOCTYPE Behavior Demo</h1>
+  
+  <h2>content-box (default)</h2>
+  <div class="box">
+    Width = 200px + 40 padding + 10 border = 250px total
+  </div>
+  
+  <h2>border-box</h2>
+  <div class="box box-border">
+    Width = 200px total (padding + border ANDAR)
+  </div>
+
+  <script>
+    console.log("Compat Mode:", document.compatMode);
+    console.log("DOCTYPE:", document.doctype);
+  </script>
+</body>
+</html>

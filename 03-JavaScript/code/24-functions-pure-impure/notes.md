@@ -1,0 +1,3 @@
+# Functions Pure Impure — Notes
+
+- 

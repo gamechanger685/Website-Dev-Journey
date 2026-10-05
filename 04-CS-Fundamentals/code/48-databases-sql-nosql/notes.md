@@ -1,0 +1,3 @@
+# Databases Sql Nosql — Notes
+
+- 

@@ -1,0 +1,3 @@
+# Osi Model — Notes
+
+- 

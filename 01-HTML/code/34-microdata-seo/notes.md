@@ -1,0 +1,3 @@
+# Microdata Seo — Notes
+
+- 

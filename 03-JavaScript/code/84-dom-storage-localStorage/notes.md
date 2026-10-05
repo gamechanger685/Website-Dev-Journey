@@ -1,0 +1,3 @@
+# Dom Storage Localstorage — Notes
+
+- 

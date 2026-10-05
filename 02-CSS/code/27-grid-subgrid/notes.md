@@ -1,0 +1,3 @@
+# Grid Subgrid — Notes
+
+- 

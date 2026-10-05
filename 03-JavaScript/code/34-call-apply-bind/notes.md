@@ -1,0 +1,3 @@
+# Call Apply Bind — Notes
+
+- 

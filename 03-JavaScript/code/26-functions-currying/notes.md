@@ -1,0 +1,3 @@
+# Functions Currying — Notes
+
+- 

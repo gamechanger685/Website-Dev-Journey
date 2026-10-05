@@ -1,0 +1,3 @@
+# Dom Performance Observer — Notes
+
+- 

@@ -1,0 +1,3 @@
+# Strong Em — Notes
+
+- 
